@@ -1,0 +1,299 @@
+
+/* ==================================
+   RESPONSIVE PORTFOLIO DESIGN
+   Cream and Dark Brown Theme
+================================== */
+
+@media (max-width: 1100px) {
+    section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .header {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .home {
+        gap: 35px;
+    }
+
+    .home-img {
+        flex-basis: 270px;
+    }
+
+    .home-img img {
+        width: 270px;
+        height: 350px;
+    }
+
+    .about {
+        gap: 35px;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+    .header {
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+    .navbar a {
+        font-size: 0.88rem;
+    }
+
+    .home {
+        min-height: auto;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .home-content h1 {
+        font-size: clamp(2.7rem, 6vw, 4rem);
+    }
+
+    .home-img {
+        flex-basis: 230px;
+    }
+
+    .home-img img {
+        width: 230px;
+        height: 300px;
+    }
+
+    .about-img {
+        flex-basis: 240px;
+    }
+
+    .about-img img {
+        height: 320px;
+    }
+
+    .skills-container,
+    .services-container,
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        min-width: 0;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    section {
+        padding: 55px 5%;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 5%;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px 16px;
+    }
+
+    .navbar a {
+        font-size: 0.83rem;
+        padding: 3px 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 30px;
+        padding-top: 40px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: clamp(2.8rem, 12vw, 3.8rem);
+        overflow-wrap: anywhere;
+    }
+
+    .home-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.98rem;
+    }
+
+    .home-img {
+        flex: none;
+        align-self: center;
+    }
+
+    .home-img img {
+        width: min(70vw, 260px);
+        height: min(88vw, 320px);
+    }
+
+    .btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-box a,
+    .btn {
+        max-width: 100%;
+        padding: 11px 16px;
+        font-size: 0.88rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 12px 7px;
+        text-align: center;
+    }
+
+    .stat-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .stat-card p {
+        font-size: 0.72rem;
+        overflow-wrap: anywhere;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .about-img {
+        width: min(100%, 280px);
+        flex: none;
+        margin: 0 auto;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+
+    .about-info {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .info-card {
+        padding: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .skills-container,
+    .services-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-box,
+    .service-card {
+        padding: 22px;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-card-content {
+        padding: 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-info p {
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 25px 5%;
+    }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 380px) {
+    .navbar {
+        gap: 7px 12px;
+    }
+
+    .navbar a {
+        font-size: 0.78rem;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        text-align: left;
+        padding: 12px 16px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-box a {
+        width: 100%;
+    }
+}
